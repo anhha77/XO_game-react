@@ -60,7 +60,7 @@ function Game() {
     const historyOfSquares = squares.slice(0, indexOfHistory + 1);
     const current = historyOfSquares[historyOfSquares.length - 1];
     const currentSquares = current.squares.slice();
-    if (winner) {
+    if (winner || currentSquares[i]) {
       return;
     } else {
       if (xIsNext) {
